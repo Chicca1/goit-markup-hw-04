@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
 }
+
+li {
+     list-style: none;
+}
  
 h1,
 h2,
@@ -24,6 +28,7 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    text-decoration: none;
 }
 
 img {
@@ -207,13 +212,34 @@ color: #FFFFFF;
 
 height: 600px;
 left: 0px;
-background: var(--basic-text-colour);
+}
+
+.overlay-hero {
+background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+url(../images/people-office-optimized.jpg);
+outline: 1px solid black;
+height: 600px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 
-
-
 /*Section2*/
+
+.logo-advantages-wrapper {
+width: 264px;
+height: 112px;
+align-items: center;
+justify-content: center;
+background-color: #F4F4FD;
+border-radius: 4px;
+display: flex;
+margin-bottom: 8px;
+}
 
 .advantures-section {
 padding-bottom: 0;
@@ -312,12 +338,14 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--basic-text-colour);
+
 }
 
 .member-description {
 text-align: center;
 font-family: var(--basic-font);
 color: #434455;
+padding-bottom: 8px;
 }
 
 .membercard-content-wrapper {
@@ -325,18 +353,102 @@ padding-top: 32px;
 padding-bottom: 32px;
 background: #FFFFFF;
 border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+0px 1px 1px rgba(46, 47, 66, 0.16), 
+0px 2px 1px rgba(46, 47, 66, 0.08);
 border: 1px;
 width: 264px;
+}
+
+.member-socialmedia-list {
+display: flex;
+flex-direction: row;
+padding: 0px;
+gap: 24px;
+justify-content:center;
+}
+
+.social-list-link {
+    display:flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    justify-content:center;
+    align-items: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404BBF;
+}
+
+
+
+/*Customers section*/
+
+
+.customers-header {
+font-family: var(--basic-font);
+line-height: 1.1;
+font-weight: 700;
+text-align: center;
+margin-bottom: 72px;
+}
+
+.customer-link {
+display: flex;
+align-items: center;
+justify-content: center;
+fill: #8E8F99;
+width: 168px;
+height: 88px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus  {
+border-color: var(--colour-change);
+}
+
+.icon-customers {
+  fill: #8E8F99;
+}
+
+.icon-customers:hover,
+.icon-customers:focus {
+  fill: var(--colour-change);
 }
 
 
 
 
+ 
+
+
+.customers-list-container {
+display: flex;
+align-items: center;
+margin-top: 72px;
+padding: 0px;
+gap: 24px;
+}
+
+
 /*Footer*/
+
+.footer-container{
+
+display: flex;
+align-items: center;
+align-items: baseline;
+}
 
 .footer {
 
 background: var(--basic-text-colour);
+display: flex;
 }
 
 .logo-footer {
@@ -371,6 +483,48 @@ color: #E7E9FC;
 padding-bottom: 100px;
 }
 
+.social-media-block-footer {
+margin-left: 120px;
+}
+
+.social-media-header{
+font-family: var(--basic-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+
+
+}
+
+
+.footer-socials-list {
+display: flex;
+padding: 0px;
+gap: 16px;
+
+
+}
+
+.socials-icon-links {
+  
+display:flex;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+justify-content:center;
+align-items: center;
+}
+
+
+
+
+
+
+
 /*Portfolio.html*/
 
 
@@ -388,6 +542,14 @@ margin-bottom: 72px;
 
 .button-portfolio {
 padding: 12px 24px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 2px 1px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -451,6 +613,14 @@ color: #FFFFFF;}
 padding-bottom: 120px;
 padding-top: 96px;
 }
+
+.portfolio-card:hover  {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card:focus  {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
 
 /*.portfolio-card {
 flex-basis: calc((100%-48px)/9);
