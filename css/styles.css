@@ -422,11 +422,6 @@ border-color: var(--colour-change);
 }
 
 
-
-
- 
-
-
 .customers-list-container {
 display: flex;
 align-items: center;
@@ -446,7 +441,6 @@ align-items: baseline;
 }
 
 .footer {
-
 background: var(--basic-text-colour);
 display: flex;
 }
@@ -495,8 +489,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 16px;
-
-
 }
 
 
@@ -504,7 +496,6 @@ margin-bottom: 16px;
 display: flex;
 padding: 0px;
 gap: 16px;
-
 
 }
 
@@ -537,7 +528,6 @@ gap: 24px;
 align-items: center;
 justify-content: center;
 margin-bottom: 72px;
-
 }
 
 .button-portfolio {
