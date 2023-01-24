@@ -217,7 +217,6 @@ left: 0px;
 .overlay-hero {
 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
 url(../images/people-office-optimized.jpg);
-outline: 1px solid black;
 height: 600px;
 background-repeat: no-repeat;
 background-position: center;
