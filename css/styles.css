@@ -217,7 +217,7 @@ left: 0px;
 .overlay-hero {
 background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
 url(../images/people-office-optimized.jpg);
-height: 600px;
+max-width: 1440px;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -344,7 +344,7 @@ color: var(--basic-text-colour);
 text-align: center;
 font-family: var(--basic-font);
 color: #434455;
-padding-bottom: 8px;
+margin-bottom: 8px;
 }
 
 .membercard-content-wrapper {
@@ -368,13 +368,13 @@ justify-content:center;
 }
 
 .social-list-link {
-    display:flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-    justify-content:center;
-    align-items: center;
+display:flex;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #4D5AE5;
+justify-content:center;
+align-items: center;
 }
 
 .social-list-link:hover,
@@ -403,16 +403,18 @@ fill: #8E8F99;
 width: 168px;
 height: 88px;
 border: 1px solid #8E8F99;
+color: #8E8F99;
 border-radius: 4px;
 }
 
 .customer-link:hover,
 .customer-link:focus  {
 border-color: var(--colour-change);
+color: var(--colour-change);
 }
 
 .icon-customers {
-  fill: #8E8F99;
+  fill: currentColor; 
 }
 
 .icon-customers:hover,
